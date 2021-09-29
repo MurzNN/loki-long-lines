@@ -5,7 +5,7 @@ Test to reproduce Loki issues:
 - https://github.com/grafana/loki/issues/2281
 
 Launch:
-1. `docker-compose up1
+1. `docker-compose up`
 2. Go to http://localhost:3000 and login, go to Explore
 3. Lookup the Loki logs of the 'app' container (by container id)
 
