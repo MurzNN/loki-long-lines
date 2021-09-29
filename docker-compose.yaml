@@ -18,6 +18,8 @@ services:
     command: -config.file=/etc/loki/local-config.yaml
     networks:
       - loki
+    volumes:
+      - ./loki-source.yml:/etc/grafana/provisioning/datasources/loki-source.yml
 
   promtail:
     image: grafana/promtail:2.3.0

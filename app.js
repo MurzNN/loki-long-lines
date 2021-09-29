@@ -1,4 +1,4 @@
-const zeroPad = (num, places) => String(num).padStart(places, '0')
+const zeroPad = (num, places) => String(num).padStart(places, '0');
 
 const genString = function (length) {
   return 'len '
@@ -10,6 +10,7 @@ const genString = function (length) {
 const printLogs = function () {
   console.log('line 1');
   console.log('line 2');
+  console.log(genString(16000));
   console.log(genString(16383));
   console.log(genString(16384));
   console.log(genString(16385));
