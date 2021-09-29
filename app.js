@@ -3,7 +3,7 @@ const zeroPad = (num, places) => String(num).padStart(places, '0');
 const genString = function (length) {
   return 'len '
     + zeroPad(length, 4) + ':'
-    + '1234567890'.repeat(Math.floor(length / 10))
+    + '1234567890'.repeat(Math.floor(length / 10) - 1)
     + '1234567890'.substring(0, (length % 10));
 }
 
